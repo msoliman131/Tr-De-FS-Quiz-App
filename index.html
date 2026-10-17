@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FS-Quiz – Austrian Driving Licence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b1220;
+      color: #1c2233;
+      text-align: center;
+    }
 
+    header {
+      background: linear-gradient(135deg, #0d47a1 0%, #1565C0 45%, #1e88e5 100%);
+      color: white;
+      padding: 80px 20px 90px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: #f4f6f8;
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    }
+    header img {
+      width: 96px;
+      height: 96px;
+      object-fit: cover;
+      border-radius: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 2.8rem;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 12px;
+      opacity: 0.92;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header .badge {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 18px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      backdrop-filter: blur(4px);
+    }
+
+    main { background: #f4f6f8; }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      padding: 50px 20px 70px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 34px 26px;
+      width: 230px;
+      box-shadow: 0 4px 18px rgba(20,30,60,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(20,30,60,0.14);
+    }
+    .card .icon {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+    }
+    .card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: #0d47a1;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .download {
+      padding: 20px 20px 70px;
+    }
+    .download h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+      color: #12203f;
+    }
+    .btn {
+      display: inline-block;
+      padding: 16px 38px;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-android {
+      background: linear-gradient(135deg, #34A853, #2e9c4c);
+      color: white;
+    }
+
+    footer {
+      background: #0b1220;
+      color: #a9b4c9;
+      padding: 34px 20px;
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: #8ec5ff;
+      text-decoration: none;
+      margin-left: 6px;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FS-Quiz</h1>
+  <p>Österreichische Führerscheinprüfung – ca. 1430 Fragen &amp; Antworten, Lernen &amp; Simulationsprüfungen</p>
+  <div class="badge"> Deutsch (AT) &nbsp;|&nbsp;  يدعم اللغة العربية</div>
+</header>
+
+<main>
+  <section class="features">
+    <div class="card">
+      <div class="icon">📚</div>
+      <h3>1450 Fragen</h3>
+      <p>Der gesamte Fragenkatalog der österreichischen Führerscheinprüfung, Klasse B.
+      <br>قائمة الأسئلة الكاملة لامتحان رخصة القيادة النمساوية، الفئة ب.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎯</div>
+      <h3>Simulationstests</h3>
+      <p>Üben Sie mit zeitlich begrenzten Simulationen im Stil echter Prüfungen.<br>
+      تدرب من خلال محاكاة محددة المدة على غرار الامتحانات الحقيقية.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h3>Arabisch verfügbar</h3>
+      <p>Vollständger Arabische-Vesion für arabischsprachige Lernende.<br>
+      النسخة العربية الكاملة للمتعلمين الناطقين باللغة العربية.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🧠</div>
+      <h3>Lern-Modus</h3>
+      <p>Lernen Sie in Ihrem eigenen Tempo mit sofortigem Feedback.<br>
+      تعلم وفقًا لسرعتك الخاصة مع تلقي تعليقات فورية.</p>
+    </div>
+  </section>
+
+  <section class="download">
+    <h2>Jetzt herunterladen</h2>
+    <a href="https://play.google.com/store/apps/details?id=juni_2026.fs_quiz_de_ar">
+    
+      ⬇ Android-Version direkt vom Google Play Store herunterladen (Release)
+    </a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 FS-Quiz. Alle Rechte vorbehalten.</p>
+  <p style="margin-top: 8px;">
+    <a href="privacy.html">Privacy Policy</a>
+  </p>
+</footer>
